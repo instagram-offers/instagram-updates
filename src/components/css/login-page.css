@@ -1,0 +1,174 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
+.login-box {
+    margin-top: 60px;
+    display: none;
+}
+
+
+.heading-image {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.insta-image {
+    width: 170px;
+}
+
+.user-input-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inp-fields {
+    width: 260px;
+    height: 37px;
+    background-color: transparent;
+    z-index: 5;
+    outline: none;
+    border: 1px solid #dbdbdb;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+
+.s-name,
+.s-pass {
+    position: absolute;
+    font-size: 12.5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    z-index: 4;
+    color: #989c9c;
+    font-weight: 500;
+}
+
+
+.parent-inp {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.parent-inp input,
+span {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+
+.login {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.login-btn {
+    width: 275px;
+    padding: 10px 0px 10px 0px;
+    font-size: 14px;
+    font-weight: 900;
+    color: white;
+    background-color: #4db5f9;
+    border: none;
+    outline: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.hor-line {
+    display: flex;
+    font-size: 18px;
+    font-weight: 900;
+    color: #989c9c;
+    margin-bottom: 35px;
+}
+
+hr {
+    width: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+.face-book {
+    text-align: center;
+}
+
+
+.facebook-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    color: #385185;
+    border: none;
+    outline: transparent;
+    font-size: 17px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+ion-icon {
+    color: #385185;
+    margin-right: 3px;
+    font-size: 18px;
+}
+
+
+
+.from-meta {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+
+.meta-img {
+    text-align: center;
+}
+
+.meta {
+    width: 70px;
+}
+
+.from {
+    font-size: 14px;
+    color: #9da0a4;
+    text-align: center;
+}
+
+
+/* animations  */
+
+@keyframes go-up {
+    100% {
+        font-size: 11px;
+        transform: translateY(-9px);
+    }
+}
+
+
+#username:not(:placeholder-shown) + .go-up-user {
+    animation: go-up 0.1s forwards;
+}
+
+#username::placeholder{
+    color: transparent;
+}
+
+
+#password:not(:placeholder-shown) + .go-up-pass {
+    animation: go-up 0.1s forwards;
+}
+
+#password::placeholder{
+    color: transparent;
+}
+
